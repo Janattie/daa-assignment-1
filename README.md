@@ -59,17 +59,34 @@ After running the benchmarks and making graphs (I did them in Numbers on Mac):
 
 Here is one of the graphs I got (time vs input size):
 
+## Results
+
 ### MergeSort
-![MergeSort Results](images/mergesort.png)
+![MergeSort runtime](./mergesort.png)
+
+*The MergeSort algorithm shows logarithmic runtime growth with increasing input size. Runtime stays low for small inputs but increases significantly for very large inputs.*
+
+---
 
 ### QuickSort
-![QuickSort Results](images/quicksort.png)
+![QuickSort runtime](./quicksort.png)
+
+*QuickSort shows similar growth to MergeSort, but with slightly higher variance due to pivot selection. Multiple trials explain fluctuations for the same input size.*
+
+---
 
 ### Deterministic Select
-![Select Results](images/select.png)
+![Deterministic Select runtime](./select.png)
 
-### Closest Pair of Points
-![Closest Pair Results](images/closest.png)
+*The Select algorithm runs in linear time, but still shows growing runtime as input size increases. The growth is smoother compared to sorting algorithms, with some variance from repeated trials.*
+
+---
+
+### Closest Pair
+![Closest Pair runtime](./closest.png)
+
+*The Closest Pair algorithm shows near-linearithmic runtime (O(n log n)) as expected. Some fluctuations appear because of multiple trials, but the general growth trend is clear.*
+
 
 ## Summary
 
